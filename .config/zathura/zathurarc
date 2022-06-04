@@ -1,0 +1,53 @@
+set sandbox none
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+set page-padding 1
+set selection-clipboard clipboard
+map u scroll half-up
+map d scroll half-down
+map D toggle_page_mode
+map r reload
+map R rotate
+map K zoom in
+map J zoom out
+map i recolor
+map p print
+map g goto top
+
+# Color Scheme
+set notification-error-bg       "#586e75" # base01  # seem not work
+set notification-error-fg       "#e95678" # red
+set notification-warning-bg     "#586e75" # base01
+set notification-warning-fg     "#e95678" # red
+set notification-bg             "#586e75" # base01
+set notification-fg             "#fd971f" # yellow
+
+set completion-group-bg         "#002b36" # base03
+set completion-group-fg         "#839496" # base0
+set completion-bg               "#23324d" # base02
+set completion-fg               "#93a1a1" # base1
+set completion-highlight-bg     "#a6e22e" # base01
+set completion-highlight-fg     "#000000" # base2
+
+# Define the color in index mode
+set index-bg                   "#2E323C" # base02
+set index-fg                   "#93a1a1" # base1
+set index-active-bg             "#586e75" # base01
+set index-active-fg             "#eee8d5" # base2
+
+set inputbar-bg                 "#586e75" # base01
+set inputbar-fg                 "#eee8d5" # base2
+
+set statusbar-bg                "#27406b" # base02
+set statusbar-fg                "#93a1a1" # base1
+
+set highlight-color             "#657b83" # base00  # hightlight match when search keyword(vim's /)
+set highlight-active-color      "#66d9ef" # blue
+
+set default-bg                  "#26292C" # base02
+set default-fg                  "#93a1a1" # base1
+
+# Recolor book content's color
+set recolor true
+set recolor-darkcolor "#f8f8f0"
+set recolor-lightcolor "#26292C"
