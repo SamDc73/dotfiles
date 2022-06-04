@@ -1,0 +1,6 @@
+
+# decompress tar.zstd
+unzstd Archive.tar.zst
+
+# compress tar to tar,zstd
+pzstd -p 4 --ultra -22 Game.tar -o Game.tar.zst

@@ -1,0 +1,2 @@
+# Finds Files with a specific extension
+fd -t f --exclude '.lua'

@@ -1,0 +1,3 @@
+# update cargo packages 
+cargo install-update -a
+

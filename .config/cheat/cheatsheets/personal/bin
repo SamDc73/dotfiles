@@ -1,0 +1,14 @@
+open --open files with fzf
+fuz --open notes
+fkill --kill process with fzf
+ew --edit scripts in bin 
+merge  --merge subs with a video file
+movie  --choose a random movie 
+fzf-history -- search through histroy
+duration  -- show total duration of videos/audio files in a dir
+subliminal  -- download subtitles 
+flatpak-theme  -- run after install flatpak package
+fimg  --fzf img preview 
+pkgsearch  --Searches repos and installs multiple packages. Currently works with Debian, Ubuntu and Arch, and experimental support for Fedora and Void.
+fmpd  -- search and play music 
+stig -- torrent clinet 

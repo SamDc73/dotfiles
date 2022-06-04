@@ -1,0 +1,2 @@
+# Show easy problem non locked non solved, with the 'hash' tag and then shuffle one 
+leetcode-cli list -q eDL -t hash | shuf -n1 

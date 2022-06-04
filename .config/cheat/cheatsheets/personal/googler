@@ -1,0 +1,19 @@
+# Fetch results for the last 14 months 
+googler -t m14 <serach entry>
+
+# Website specific Search
+googler -w amazon.com -w ebay.com <search entry>
+
+# Read recent news on gadgets
+googler -N gadgets
+
+# Search for videos on PyCon 2020:
+googler -V PyCon 2020
+
+# Search for a specific file type:
+googler <search entry> filetype:mp3
+
+# Disable automatic spelling correction
+googler -x <search entry>
+
+

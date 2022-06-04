@@ -1,0 +1,25 @@
+---
+tags: [ vcs ]
+---
+# add to your repo 
+git remote add origin /path/to/origin.git
+
+# Add a file 
+git add main.py
+
+# Name the commit 
+git commit -m "initial commit"
+
+# push the changes to git 
+git push origin main
+
+# Clone with in the folder 
+git clone <remote> .
+
+## Git Bare 
+git init --bare $HOME/dotfiles
+git --git-dir=$HOME/dotfiles/ --work-tree=$HOME config --local status.showUntrackedFiles no
+git --git-dir=$HOME/dotfiles/ --work-tree=$HOME add /path/to/file
+git --git-dir=$HOME/dotfiles/ --work-tree=$HOME commit -m "A short message"
+git --git-dir=$HOME/dotfiles/ --work-tree=$HOME push origin main
+

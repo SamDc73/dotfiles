@@ -1,0 +1,2 @@
+LC_COLLATE=en_US.UTF-8 sort -d -o ~/Notes/typing/words ~/Notes/typing/words 
+sed --in-place 's/[[:space:]]\+$//' Notes/typing/words

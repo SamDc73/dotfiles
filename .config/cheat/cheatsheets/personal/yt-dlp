@@ -1,0 +1,29 @@
+# Install specific videos from a playlist
+--playlist-start 5
+--playlist-items 8-25
+
+# Choose the video format 
+--merge-output-format mkv
+
+#Add downloaded videos to the archive
+--download-archive archive.txt
+
+# Write subs to the video
+--write-auto-sub --embed-subs --sub-lang en,ar --convert-subs srt
+
+# Rename the file 
+-o "%(autonumber)s-%(title)s.%(ext)s"
+-o "%(title)s.%(ext)s"
+
+# Save plylist titles to a txt file
+yt-dlp -i -o "%(playlist_index)s-%(title)s-%(uploader)s-%(id)s" --get-filename --skip-download https://www.youtube.com/playlist\?list\=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs > log.txt
+
+# Save Downloaded to Archive
+--download-archive archive.txt
+
+# others
+--embed-thumbnail --embed-chapters --write-description
+
+#yt-dlp prsents:
+#freecodeCamp: 
+yt-dlp -F --write-sub --embed-subs --sub-lang en --convert-subs srt --embed-thumbnail --embed-chapters -o "%(title)s.%(ext)s" --merge-output-format mp4
