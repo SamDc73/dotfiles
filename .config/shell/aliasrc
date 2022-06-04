@@ -1,0 +1,57 @@
+#!/bin/sh
+
+# Use neovim for vim if present.
+[ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
+
+# Use $XINITRC variable if file exists.
+# [ -f "$XINITRC" ] && alias startx="startx $XINITRC"
+
+# sudo not required for some system commands
+for command in dnf mount umount sv pacman updatedb su shutdown poweroff reboot ; do
+	alias "$command=sudo $command"
+done; unset command
+
+# Verbosity and settings that you pretty much just always are going to want.
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	bc="bc -ql" \
+	mkd="mkdir -pv" \
+	rm="rm -i" \
+  ffmpeg="ffmpeg -hide_banner"
+
+# Colorize commands when possible.
+alias \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi" \
+	ip="ip -color=auto"
+
+# Apps alias
+alias \
+  ls="lsd" \
+  code="vscodium" \
+  fzf="fzf --preview 'fzf-preview {}'" \
+  cat="bat --paging=never" \
+
+# shortend
+alias \
+  proc="sudo protonvpn c -f" \
+  prod="sudo protonvpn d" \
+  prous="sudo protonvpn c --cc US" \
+  yt-dlp="yt-dlp --embed-thumbnail --embed-chapters --embed-metadata --write-auto-sub --embed-subs --sub-lang en,ar --convert-subs srt -o '%(title)s.%(ext)s' --merge-output-format mp4" \
+  yt="ytfzf -t --thumb-viewer=kitty --video-pref=22" \
+  fmark="mark" \
+  eqoutes="nvim ~/.config/zsh/plugins/qoutes.zsh" \
+  xs="xclip -selection clipboard" \
+  ws="wl-copy"
+  ft="python3 -m fasttyper -n Notes/typing/words" \
+  lab="cd /mnt/hdd/myProjects/python_101 && jupyter lab"
+
+
+alias ranger='ranger --choosedir=$HOME/.cache/rangerdir; LASTDIR=`cat $HOME/.cache/rangerdir`; cd "$LASTDIR"'
+
+# lazy
+alias \
+  torrent="mv ~/Downloads/*.torrent /mnt/hdd/Downloads/torrent/watch/" \
+  gitdot="git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
