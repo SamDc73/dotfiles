@@ -1,0 +1,10 @@
+# Enviromental virables
+flatpak override --env=VARIABLE_NAME=VARIABLE_VALUE full.application.Name 
+flatpak override --env=VARIABLE_NAME_ONE=VARIABLE_VALUE_ONE --env=VARIABLE_NAME_TWO=VARIABLE_VALUE_TWO full.application.Name 
+flatpak override --user --env=VARIABLE_NAME=VARIABLE_VALUE full.application.Name
+
+# List installed apps
+flatpak list --app
+
+# Install pip packages
+flatpak run --command=pip3 io.atom.Atom install --user flake8

@@ -1,0 +1,14 @@
+# install form github repo 
+zap install --github --from vscodium/vscodium
+
+# cahnge version (update or downgrade a certain app)
+zap update
+
+# Install AppImage from URL
+zap install --from https://f.sed.lol/wow.AppImage
+
+# Integrate a locally downloaded AppImage
+zap install libresprite ~/Downloads/Libresprite-x86_64.AppImage
+
+
+

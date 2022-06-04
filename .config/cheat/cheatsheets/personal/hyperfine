@@ -1,0 +1,23 @@
+# run hyperfine
+hyperfine "ls -a"
+
+# Run the commnd for 1000 of times 
+hyperfine --runs 1000 
+
+# shoe the results in seconds 
+hyperfine --time-unit seconds
+
+# Add warmup so you get more accurate results
+hyperfime --warmup 10 
+
+# ignoe failures
+hyperfine --ignoe-failure
+
+# compare speed of several apps
+hyperfine "ls" "lsd" "exa"
+
+# benchmark on a diffrent shell 
+hyperfine --shell /bin/bash "ls" 
+
+# Ultimate hyperfine
+hyperfien --runs 1000 --warmup 10 

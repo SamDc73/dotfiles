@@ -1,0 +1,2 @@
+# install a package using specific python version:
+python2.7 -m pip install foo

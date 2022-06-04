@@ -1,0 +1,28 @@
+---
+tags: [ packaging ]
+---
+# To find which package provides an executable:
+dnf provides <executable>
+
+# To install the build dependencies for a SRPM or from a .spec file:
+dnf builddep <file>
+
+# To list repos
+sudo dnf repository-packages fedora list
+ls /etc/yum.repos.d/
+dnf repolist
+
+# To remove a repos
+dnf config-manager --set-disabled <repository>
+
+# Search installed packages 
+dnf list installed | grep <package>
+
+# upgrade release number
+sudo dnf system-upgrade download --releasever=36
+
+# Install a package from the beta repo 
+sudo dnf upgrade --enablerepo=updates-testing neovim
+
+# List dependencies of a package
+dnf repoquery --requires <package>

@@ -1,0 +1,6 @@
+# tar.zst
+tar --use-compress-program=unzstd -xvf
+
+# tar.gz
+tar -xf
+

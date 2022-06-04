@@ -1,0 +1,6 @@
+# Extract and Compress 
+:compress files.zip
+:extract some_dir
+
+# Copy folder/file name to the buffer 
+shell -d echo -n %f | wl-copy

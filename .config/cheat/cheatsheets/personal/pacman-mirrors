@@ -1,0 +1,5 @@
+#  Update mirros to the fastest
+sudo pacman-mirrors --fasttrack && sudo pacman -Syyu
+
+# list all the mirrors
+cat /etc/pacman.d/mirrorlist
