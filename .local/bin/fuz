@@ -2,9 +2,9 @@
 
 # Edited by: samdc73 (github | tiwtter | instagram)
 # Created by: Aaron Lichtman -- https://github.com/alichtman
-# despendecies: fzf, bat, fzf-preview [can be found at ]
+# despendecies: fzf, bat, fzf-preview [can be found at https://github.com/SamDc73/dotfiles/tree/master/.local/bin ]
 # brief: A script for quickly editing your notes.
-# github repo for other scripts:
+# github repo for other scripts: https://github.com/SamDc73/dotfiles/tree/master/.local/bin
 # How to use it:
 # create new files by selecting CREATE_NEW_FILE at the menu.
 # set the virable $EDITOR to set your text Editor and $NOTES for your notes directory
