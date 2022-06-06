@@ -3,6 +3,7 @@
 # Edited by: samdc73 (github | tiwtter | instagram)
 # Inspired by:  gotbletu (@gmail|twitter|youtube|github|lbry)
 # despendecies: fzf, mlocate, xdg-utils, util-linux, bat, fzf-preview
+# github repo for other scripts: https://github.com/SamDc73/dotfiles/tree/master/.local/bin
 # REQD:   # update system database
 #         sudo updatedb
 #

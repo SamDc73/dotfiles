@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Editied by: samdc73 (github | tiwtter | instagram)
-# github repo for other scripts:
+# github repo for other scripts: https://github.com/SamDc73/dotfiles/tree/master/.local/bin
 # despendecies: riggrep ffmpeg fd
 # brief: Clculate the total duration of a directoyr of media files [videos and/or audio]
 # How to use it: cd into the directoyr your want the total duration of contained media on it \

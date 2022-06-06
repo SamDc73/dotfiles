@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Created by: samdc73 (github | tiwtter | instagram)
-# github repo for other scripts:
+# github repo for other scripts: https://github.com/SamDc73/dotfiles/tree/master/.local/bin
 # despendecies: mkvmerge
 # brief: merge subtiles into a video {support srt, ass for subs and only mkv for video}
 # How to use it: run `merge` in the dir  with vids and subs you need to merge
