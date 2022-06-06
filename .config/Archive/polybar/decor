@@ -1,0 +1,238 @@
+[module/spacing]
+type = custom/text
+content = " "
+content-background = ${color.background}
+
+[module/dot]
+type = custom/text
+;content = 
+content = ""
+
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.altblack}
+content-padding = 1
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/LD]
+type = custom/text
+content = "%{T3}%{T-}"
+content-background = ${color.background}
+content-foreground = ${color.altblack}
+
+[module/RD]
+type = custom/text
+content = "%{T3}%{T-}"
+content-background = ${color.background}
+content-foreground = ${color.altblack}
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+
+[module/1l]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.color1}
+
+[module/1r]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.color1}
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/2l]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.color2}
+
+[module/2r]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.color2}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/3l]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.color3}
+
+[module/3r]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.color3}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/4r]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.color4}
+
+[module/4l]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.color4}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/5l]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.color5}
+
+[module/5r]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.color5}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/6l]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.color6}
+
+[module/6r]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.color6}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/7l]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.color7}
+
+[module/7r]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.color7}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/8l]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.color8}
+
+[module/8r]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.color8}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/9l]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.color9}
+
+[module/9r]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.color9}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/10l]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.color10}
+
+[module/10r]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.color10}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/11l]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.color11}
+
+[module/11r]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.background}
+content-foreground = ${color.color11}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/23]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.color2}
+content-foreground = ${color.color3}
+
+[module/34]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.color3}
+content-foreground = ${color.color4}
+
+[module/56]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.color5}
+content-foreground = ${color.color6}
+
+[module/89]
+type = custom/text
+content = "%{T3}%{T-}"
+content-font = 3
+content-background = ${color.color8}
+content-foreground = ${color.color9}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+
+

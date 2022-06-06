@@ -1,0 +1,36 @@
+[color]
+
+background = #282a36
+foreground = #f8f8f2
+black = #3B4252
+
+color1 = #ff5353
+color2 = #ffc743
+color3 = #81ff6e
+color4 = #7eb3eb
+color5 = #eb4ca1
+color6 = #cf5eeb
+color7= #00e1a5
+color8 = #81ff6e
+color9 = #7eb3eb
+color10= #ffc743
+color11= #ff5353
+
+
+
+#green = #50fa7b
+#yellow = #ecfa6c
+
+
+gray = #9c9c9c
+red = #ff0004
+white = #E5E9F0
+altblack = #4C566A
+altred = #BF616A
+altgreen = #A3BE8C
+altyellow = #EBCB8B
+altblue = #81A1C1
+altmagenta = #B48EAD
+altcyan = #8FBCBB
+altwhite = #ECEFF4
+
