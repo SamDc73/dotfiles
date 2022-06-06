@@ -1,0 +1,18 @@
+[Desktop Entry]
+Name=SimplePager
+Comment=Switch between virtual desktops
+Icon=user-desktop
+Type=Service
+X-Plasma-API=declarativeappletscript
+X-KDE-ServiceTypes=Plasma/Applet
+X-Plasma-MainScript=ui/main.qml
+X-Plasma-Provides=org.kde.plasma.virtualdesktops
+X-KDE-PluginInfo-Author=The Plasma Team more adhe 
+X-KDE-PluginInfo-Email=adhemarks@gmail.com
+X-KDE-PluginInfo-Name=SimplePager
+X-KDE-PluginInfo-Version=4.0
+X-KDE-PluginInfo-Website=
+X-KDE-PluginInfo-Category=Windows and Tasks
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=GPL-2.0+
+X-KDE-PluginInfo-EnabledByDefault=true

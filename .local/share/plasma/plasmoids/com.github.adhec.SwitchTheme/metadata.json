@@ -1,0 +1,26 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "adhemarks@gmail.com",
+                "Name": "adhe"
+            }
+        ],
+        "Category": "Windows and Tasks",
+        "Dependencies": [
+        ],
+        "Description": "Switch global theme",
+        "EnabledByDefault": true,
+        "Icon": "user-desktop",
+        "Id": "com.github.adhec.SwitchTheme",
+        "License": "GPL-2.0+",
+        "Name": "SwitchTheme",
+        "ServiceTypes": [
+            "Plasma/Applet"
+        ],
+        "Version": "1.0",
+        "Website": ""
+    },
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-MainScript": "ui/main.qml"    
+}

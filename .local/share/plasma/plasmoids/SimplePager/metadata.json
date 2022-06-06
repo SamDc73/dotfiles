@@ -1,0 +1,29 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "adhemarks@gmail.com",
+                "Name": "adhe"
+            }
+        ],
+        "Category": "Windows and Tasks",
+        "Dependencies": [
+        ],
+        "Description": "Switch between virtual desktops",
+        "EnabledByDefault": true,
+        "Icon": "user-desktop",
+        "Id": "SimplePager",
+        "License": "GPL-2.0+",
+        "Name": "SimplePager",
+        "ServiceTypes": [
+            "Plasma/Applet"
+        ],
+        "Version": "4.0",
+        "Website": "http://userbase.kde.org/Plasma/Pager"
+    },
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-MainScript": "ui/main.qml",
+    "X-Plasma-Provides": [
+        "org.kde.plasma.virtualdesktops"
+    ]
+}
