@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# Editied by: samdc73 (github | tiwtter | instagram)
+# github repo for other scripts:
+# despendecies: riggrep ffmpeg fd
+# brief: Clculate the total duration of a directoyr of media files [videos and/or audio]
+# How to use it: cd into the directoyr your want the total duration of contained media on it \
+# and simply run the script
+
+tot=0
+
+while read -r i
+do
+        tmp=0
+        tmp=`ffprobe "$i" -show_format 2>/dev/null | rg "^duration" | cut -d '=' -f 2 | cut -d '.' -f 1`
+
+        if [ "$tmp" != "" ]; then
+                let tot+="$tmp"
+        fi
+done < <(fd -e mp4 -e mkv -e mp3 -e flac -e m4a -e webm -e webp)
+
+echo "Total duration: $(($tot/60)) minutes"

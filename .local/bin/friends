@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Editied by: samdc73 (github | tiwtter | instagram)
+# github repo for other scripts:
+# despendecies: mpv
+# How to use it: set the $FRIENDS variable to the location of Friends tv show and just type frineds in your terminal
+
+startDir='/mnt/hdd/MediA/Tv Series/Friends DVD/'
+maxPathRange=11
+endPath=$startDir
+
+for (( i=1; i<=$((1 + RANDOM % $maxPathRange)); i++ )); do
+    directory=$(find "$endPath" -maxdepth 1 -type d ! -path "$endPath" -printf "%f\n" | sort -R | head -n 1) 
+    if [[ -z $directory ]]; then break; fi
+    endPath=$endPath/$directory
+done <<< "$directory"
+
+cd "$endPath" && mpv --no-resume-playback --shuffle *

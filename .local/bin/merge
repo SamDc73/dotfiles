@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Created by: samdc73 (github | tiwtter | instagram)
+# github repo for other scripts:
+# despendecies: mkvmerge
+# brief: merge subtiles into a video {support srt, ass for subs and only mkv for video}
+# How to use it: run `merge` in the dir  with vids and subs you need to merge
+
+ls *.srt *.ass | while read sub; do
+  prefix="${sub%.*}"
+  mkvmerge -v -o "$prefix" "$prefix"*.mkv --language 0:ara "$sub"
+  rm "$prefix"*.mkv "$sub"
+  mv "$prefix" "$prefix".mkv
+done

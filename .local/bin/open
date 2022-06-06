@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+# Edited by: samdc73 (github | tiwtter | instagram)
+# Inspired by:  gotbletu (@gmail|twitter|youtube|github|lbry)
+# despendecies: fzf, mlocate, xdg-utils, util-linux, bat, fzf-preview
+# REQD:   # update system database
+#         sudo updatedb
+#
+#         # optional: include external hdd or other mounted partition to be in the database
+#         1. sudo vim /etc/updatedb.conf
+#         2. Remove /media from PRUNEPATHS
+#         3. sudo updatedb
+
+
+# selected="$(fzf --style=numbers --color=always)"
+selected="$(fzf --preview 'fzf-preview {}')"  # IF you don't have the 'fzf-preview' script installed comment this line and uncomment the above one 
+isFile=$(file -0 "$selected" | cut -d $'\0' -f2)
+[ "$selected" = "" ] && exit
+# if it's a text open using the defualt $EDITOR (Nano by defualt)
+if [[ $isFile == *"text"* ]]; then
+  echo "$selected" | while read -r line ; do "$EDITOR" "$line" ; done
+# Else open the file using xdg-open
+else
+  echo "$selected" | while read -r line ; do setsid xdg-open "$line" ; done
+fi
