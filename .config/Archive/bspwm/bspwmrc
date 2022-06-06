@@ -1,0 +1,71 @@
+#! /bin/sh
+
+# To show the lattedock when using it with kde
+bspc config top_padding 28
+
+# Startups
+pgrep -x sxhkd > /dev/null || sxhkd &
+# polybar -c ~/.config/polybar/config
+# ~/.config/dunst/dunstrc
+# ~/.config/polybar/bin/launch.sh
+# feh --randomize --bg-scale --auto-zoom --image-bg 1920x1080 /home/samdc/Pictures/Desktop_wallpaper/*
+picom -b --experimental-backends
+# xsetroot -cursor_name left_ptr & 
+
+
+# focus with pointer
+bspc config focus_follows_pointer true
+
+# Monitor setup
+bspc config -m LVDS-1 top_padding 42
+
+# border colors basic
+bspc config focused_border_color '#ff5353'
+bspc config normal_border_color '#0f0f17'
+
+
+# bspc monitor -d   龎       
+bspc monitor -d 1 2 3 4 5
+
+# window gap and width
+bspc config border_width         3
+bspc config window_gap          14
+
+# Defaults
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+#bspc rule -a Gimp desktop='^2' state=floating follow=on
+#bspc rule -a Chromium desktop='^2'
+#bspc rule -a mplayer2 state=floating
+#bspc rule -a Galculator state=floating
+#bspc rule -a Kupfer.py focus=on
+#bspc rule -a Screenkey manage=off
+bcpc rule -a lattedock state=floating
+bcpc rule -a latte-dock state=floating
+bspc rule -a Zathura state=tiled
+bspc rule -a Otter desktop=2
+bcpc rule -a Chromium desktop=2
+bspc rule -a FreeTube desktop=2
+bspc rule -a Chromium desktop=2
+bspc rule -a Zathura desktop=3
+bspc rule -a VSCodium desktop=4
+#bspc rule -s TelegramDesktop desktop=5
+#bspc rule -a elisa desktop=6
+#kitty --class ncmpcpp ncmpcpp&
+#bspc rule -a ncmpcpp desktop=6
+#bspc rule -a vlc desktop=7
+#bspc rule -a mpv desktop=7
+#bspc rule -a transmission desktop=8
+#bspc rule -a Lutris desktop=9
+
+# Rember stacking window location
+bspc config external_rules_command ~/.config/bspwm/external_rules.sh
+sh ~/.config/bspwm/stacking.sh
+
+# control windows using mouse
+bspc config pointer_modifier mod4
+bspc config pointer_action1 move
+bspc config pointer_action2 resize_side
+bspc config pointer_action2 resize_corner
