@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+
+# Edited by: samdc73 (github | tiwtter | instagram)
+# Created by: Aaron Lichtman -- https://github.com/alichtman
+# despendecies: fzf, bat, fzf-preview [can be found at ]
+# brief: A script for quickly editing your notes.
+# github repo for other scripts:
+# How to use it:
+# create new files by selecting CREATE_NEW_FILE at the menu.
+# set the virable $EDITOR to set your text Editor and $NOTES for your notes directory
+
+#TODO: ADD keybindig for deleting files and the abiltiy to rename files
+
+NOTES="$HOME/Notes"
+
+set -e
+new_file_creation_option="CREATE_NEW_FILE"
+
+main() {
+	cd "$NOTES"
+	touch "$new_file_creation_option"
+	previous_file="$1"
+	file_to_edit=$(select_file "$previous_file")
+
+	if [ "$file_to_edit" != "" ] ; then
+	  if [ "$file_to_edit" == "$new_file_creation_option" ] ; then
+		  read -p "Enter a new file name: " file_to_edit
+		  touch_create_parent "$file_to_edit"
+	  fi
+	rm "$new_file_creation_option"
+	"$EDITOR" "$file_to_edit"
+	main "$file_to_edit"
+	fi
+	cd -
+}
+
+touch_create_parent() {
+	mkdir -p "$(dirname "$1")" && touch "$1"
+}
+
+select_file() {
+	given_file="$1"
+	fzf --preview= --preview 'fzf-preview {}' --query="$given_file"
+}
+
+# Hook SIGINT to clean up
+trap cleanup EXIT INT TERM
+
+function cleanup () {
+	rm "$new_file_creation_option"
+}
+
+main ""

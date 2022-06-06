@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Editied by: samdc73 (github | tiwtter | instagram)
+# github repo for other scripts:
+# despendecies: mpv
+# How to use it: set the $MOVIES variable to the location of your Movies directory and the run the script
+
+startDir='/mnt/hdd/MediA/Movies/'
+maxPathRange=10
+endPath=$startDir
+
+for (( i=1; i<=$((1 + RANDOM % $maxPathRange)); i++ )); do
+    directory=$(find "$endPath" -maxdepth 1 -type d ! -path "$endPath" -printf "%f\n" | sort -R | head -n 1)
+    if [[ -z $directory ]]; then break; fi
+    endPath=$endPath/$directory
+done <<< "$directory"
+
+cd "$endPath" && mpv *

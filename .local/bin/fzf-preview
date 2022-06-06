@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+# Created by: samdc73 (github | tiwtter | instagram)
+# despendecies: fzf glow kitty bat
+# github repo for other scripts:
+# brief: add the ability to preview various file formats from fzf
+# How to use it: simply run < fzf --preview '/path/to/fzf-preview {}' >
+
+file="$1"
+
+if [[ -d "$file" ]]; then
+    ls -al --color "$file"
+elif [[ $(file --mime "$file") =~ binary ]]; then
+    if [[ $(file --mime "$file") =~ "image/" ]]; then
+        columns=$(tput cols)
+        columns=$(($columns / 2))
+        catimg -w "$columns" "$file" 
+    else
+        echo "$file is a binary file" && false
+    fi
+elif [[ "${file#*.}" =~ md ]]; then
+  glow -s dark "$1"
+else
+    bat --theme="Monokai Extended Origin" --style=numbers --color=always "$file" 2> /dev/null | head -100
+fi
