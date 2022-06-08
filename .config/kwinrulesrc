@@ -1,0 +1,81 @@
+[$Version]
+update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
+
+[04a1e381-7ef8-4fda-a764-f90903302920]
+Description=Application settings for mpv
+clientmachine=localhost
+desktops=91054bd4-dbba-4eec-a962-31e6272f5ce4
+desktopsrule=3
+wmclass=gl mpv
+wmclasscomplete=true
+wmclassmatch=1
+
+[09e64d1e-0fdb-4a05-bc72-9aab9b66a05c]
+Description=Application settings for mpv
+desktops=91054bd4-dbba-4eec-a962-31e6272f5ce4
+desktopsrule=3
+wmclass=mpv
+wmclassmatch=1
+
+[1]
+Description=Window settings for standard notes
+clientmachine=localhost
+desktops=91054bd4-dbba-4eec-a962-31e6272f5ce4,06d19349-5c65-4726-8c8c-4bff84474e11
+desktopsrule=2
+title=Standard Notes
+types=1
+wmclass=\sstandard notes
+wmclasscomplete=true
+wmclassmatch=1
+
+[2]
+Description=Window settings for firefox
+clientmachine=localhost
+desktops=a9707e47-bade-4684-b815-345f7cf948f2
+desktopsrule=3
+title=Mozilla Firefox
+titlematch=1
+types=1
+wmclass=firefox
+wmclassmatch=1
+
+[2fe8f2a3-dc80-4c79-9215-40578ef8cf2c]
+Description=Window settings for firefox
+desktops=a9707e47-bade-4684-b815-345f7cf948f2
+desktopsrule=3
+title=Mozilla Firefox
+titlematch=1
+types=1
+wmclass=firefox
+wmclassmatch=1
+
+[3]
+Description=Application settings for mpv
+clientmachine=localhost
+desktops=91054bd4-dbba-4eec-a962-31e6272f5ce4
+desktopsrule=3
+wmclass=mpv
+wmclassmatch=1
+
+[4]
+Description=Application settings for mpv
+clientmachine=localhost
+desktops=91054bd4-dbba-4eec-a962-31e6272f5ce4
+desktopsrule=3
+wmclass=gl mpv
+wmclasscomplete=true
+wmclassmatch=1
+
+[General]
+count=4
+rules=1,2,3,4
+
+[a17a79b2-7cbd-4980-a239-11b5b39afbf3]
+Description=Window settings for standard notes
+desktops=91054bd4-dbba-4eec-a962-31e6272f5ce4,06d19349-5c65-4726-8c8c-4bff84474e11
+desktopsrule=3
+title=Standard Notes
+types=1
+wmclass=\sstandard notes
+wmclasscomplete=true
+wmclassmatch=1

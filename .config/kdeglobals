@@ -1,0 +1,160 @@
+[$Version]
+update_info=filepicker.upd:filepicker-remove-old-previews-entry,fonts_global.upd:Fonts_Global,fonts_global_toolbar.upd:Fonts_Global_Toolbar,icons_remove_effects.upd:IconsRemoveEffects,kwin.upd:animation-speed,style_widgetstyle_default_breeze.upd:StyleWidgetStyleDefaultBreeze
+
+[ColorEffects:Disabled]
+ChangeSelectionColor=
+Color=56,56,56
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0.65
+ContrastEffect=0
+Enable=
+IntensityAmount=0.1
+IntensityEffect=0
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=false
+Color=112,111,110
+ColorAmount=-0.9500000000000001
+ColorEffect=0
+ContrastAmount=0.1
+ContrastEffect=0
+Enable=false
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=204,208,214
+BackgroundNormal=188,192,197
+DecorationFocus=16,166,212
+DecorationHover=133,174,192
+ForegroundActive=61,174,233
+ForegroundInactive=42,45,49
+ForegroundLink=41,128,185
+ForegroundNegative=255,43,47
+ForegroundNeutral=246,116,0
+ForegroundNormal=42,45,49
+ForegroundPositive=31,140,236
+ForegroundVisited=127,140,141
+
+[Colors:Complementary]
+BackgroundAlternate=204,208,214
+BackgroundNormal=204,208,214
+ForegroundInactive=88,88,90
+ForegroundNormal=88,89,89
+
+[Colors:Header]
+BackgroundAlternate=204,208,214
+BackgroundNormal=204,208,214
+
+[Colors:Selection]
+BackgroundAlternate=16,166,212
+BackgroundNormal=16,166,212
+DecorationFocus=16,166,212
+DecorationHover=133,174,192
+ForegroundActive=252,252,252
+ForegroundInactive=42,45,49
+ForegroundLink=253,188,75
+ForegroundNegative=255,43,47
+ForegroundNeutral=246,116,0
+ForegroundNormal=201,212,230
+ForegroundPositive=31,140,236
+ForegroundVisited=189,195,199
+
+[Colors:Tooltip]
+BackgroundAlternate=204,208,214
+BackgroundNormal=204,208,214
+DecorationFocus=16,166,212
+DecorationHover=133,174,192
+ForegroundActive=61,174,233
+ForegroundInactive=42,45,49
+ForegroundLink=41,128,185
+ForegroundNegative=255,43,47
+ForegroundNeutral=246,116,0
+ForegroundNormal=42,45,49
+ForegroundPositive=31,140,236
+ForegroundVisited=127,140,141
+
+[Colors:View]
+BackgroundAlternate=204,208,214
+BackgroundNormal=204,208,214
+DecorationFocus=16,166,212
+DecorationHover=133,174,192
+ForegroundActive=61,174,233
+ForegroundInactive=42,45,49
+ForegroundLink=31,140,236
+ForegroundNegative=255,43,47
+ForegroundNeutral=246,116,0
+ForegroundNormal=42,45,49
+ForegroundPositive=31,140,236
+ForegroundVisited=127,140,141
+
+[Colors:Window]
+BackgroundAlternate=204,208,214
+BackgroundNormal=204,208,214
+DecorationFocus=16,166,212
+DecorationHover=133,174,192
+ForegroundActive=61,174,233
+ForegroundInactive=42,45,49
+ForegroundLink=41,128,185
+ForegroundNegative=255,43,47
+ForegroundNeutral=246,116,0
+ForegroundNormal=42,45,49
+ForegroundPositive=31,140,236
+ForegroundVisited=127,140,141
+
+[DirSelect Dialog]
+DirSelectDialog Size=838,592
+History Items[$e]=file:$HOME/Pictures/Desktop_wallpaper,file:$HOME/Applications/Calibre Library,file:$HOME/Calibre Library,file:///mnt/hdd/Downloads/Games/Grand Theft Auto IV/prefix,file:$HOME/Pictures/Desktop_wallpaper,file:$HOME/Pictures/Desktop_wallpaper
+
+[General]
+BrowserApplication=firefox.desktop
+ColorSchemeHash=ff91a006e82bf96eab4afcb5c8c5739919f8d9f3
+Name=Edna-light
+TerminalApplication=kitty
+TerminalService=kitty.desktop
+XftHintStyle=hintslight
+XftSubPixel=rgb
+font=SF Pro,10,-1,5,50,0,0,0,0,0
+menuFont=SF Pro,10,-1,5,50,0,0,0,0,0
+shadeSortColumn=true
+smallestReadableFont=SF Pro,8,-1,5,50,0,0,0,0,0
+toolBarFont=SF Pro,10,-1,5,50,0,0,0,0,0
+
+[Icons]
+Theme=McMojave-circle-modified
+
+[KDE]
+AnimationDurationFactor=0
+LookAndFeelPackage=Edna-Light
+contrast=10
+
+[KFileDialog Settings]
+Allow Expansion=false
+Automatically select filename extension=true
+Breadcrumb Navigation=false
+Decoration position=2
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
+Show Bookmarks=false
+Show Full Path=false
+Show Inline Previews=true
+Show Preview=false
+Show Speedbar=true
+Show hidden files=true
+Sort by=Name
+Sort directories first=true
+Sort reversed=false
+Speedbar Width=134
+View Style=DetailTree
+
+[WM]
+activeBackground=204,208,214
+activeBlend=204,208,214
+activeFont=SF Pro,10,-1,5,50,0,0,0,0,0
+activeForeground=42,45,49
+frame=61,174,233
+inactiveBackground=204,208,214
+inactiveBlend=204,208,214
+inactiveForeground=54,58,63
+inactiveFrame=239,240,241
